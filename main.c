@@ -96,3 +96,4 @@ int main() {
     printf("Elemento retirado da posição 1: %d\n", elemento);
 
     return 0;
+}
