@@ -24,7 +24,6 @@ bool listaCheia(ListaSequencial *lista) {
     return lista->tamanho == MAX;
 }
 
-// 4. Obter o tamanho da lista
 int tamanhoLista(ListaSequencial *lista) {
     return lista->tamanho;
 }
@@ -83,17 +82,17 @@ int main() {
 
     int elemento;
     if (obterElemento(&lista, 1, &elemento) == 0) {
-        printf("Elemento na posição 1: %d\n", elemento);
+        printf("Elemento na posiÃ§Ã£o 1: %d\n", elemento);
     }
 
     modificarElemento(&lista, 1, 25);
 
     if (obterElemento(&lista, 1, &elemento) == 0) {
-        printf("Elemento na posição 1 após modificação: %d\n", elemento);
+        printf("Elemento na posiÃ§Ã£o 1 apÃ³s modificaÃ§Ã£o: %d\n", elemento);
     }
 
     retirarElemento(&lista, 1, &elemento);
-    printf("Elemento retirado da posição 1: %d\n", elemento);
+    printf("Elemento retirado da posiÃ§Ã£o 1: %d\n", elemento);
 
     return 0;
 }
